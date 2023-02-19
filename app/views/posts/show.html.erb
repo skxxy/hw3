@@ -1,0 +1,11 @@
+<h1>
+<%= @post["title"]%>
+</h2>
+<p>
+<%= @post["description"]%>
+<%= @post["posted_on"]%>
+</p>
+<p>
+    <a href="/posts/new?place_id=<%= @place["id"]%>">Create a new description at <%= @place["name"]%></a>
+</p>
+

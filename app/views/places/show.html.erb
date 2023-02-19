@@ -1,0 +1,19 @@
+<h1><%= @places["name"]%></h1>
+
+<a href="/places">All Places</a>
+
+<h3> Travel Journey </h3>
+<ul>
+    <%for post in @posts %>
+     <li>
+        <%= post["description"]%>
+        <%= post["posted_on"]%>
+     </li>
+    <%end%>
+</ul>
+
+<p>
+    <a href="/posts/new?place_id=<%= @places["id"]%>">Create a new description at <%= @places["name"]%></a>
+</p>
+
+<p>

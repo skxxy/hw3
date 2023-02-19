@@ -1,0 +1,13 @@
+<%= form_with :model => @places do |form| %>
+  <p>
+    <%= form.label "name"%>
+    <%= form.text_field "name" %>
+  </p>
+  <p>
+    <%= form.label "create_at" %>
+    <%= form.date_field "create_at" %>
+    <%= form.label "update_at" %>
+    <%= form.date_field "update_at" %>
+  </p>
+  <%= form.submit %>
+<% end %>
